@@ -87,12 +87,12 @@
 
             <label class="col-xs-11">Password:</label>
             <div class="col-xs-11">
-                <asp:TextBox ID="passwordTextBox" runat="server" class="form-control" placeholder="Enter Your Password"></asp:TextBox>
+                <asp:TextBox ID="passwordTextBox" runat="server" class="form-control" placeholder="Enter Your Password" TextMode="Password"></asp:TextBox>
             </div>
 
             <label class="col-xs-11">Confirm Password:</label>
             <div class="col-xs-11">
-                <asp:TextBox ID="confirmPasswordTextBox" runat="server" class="form-control" placeholder="Enter Your Password"></asp:TextBox>
+                <asp:TextBox ID="confirmPasswordTextBox" runat="server" class="form-control" placeholder="Enter Your Password" TextMode="Password"></asp:TextBox>
             </div>
 
             <label class="col-xs-11">Full Name:</label>
@@ -108,7 +108,8 @@
             <label class="col-xs-11"></label>
 
             <div class="col-xs-11">
-                <asp:Button ID="signUpButton" runat="server" Text="Sign Up" class="btn btn-success" />
+                <asp:Button ID="signUpButton" runat="server" Text="Sign Up" class="btn btn-success" OnClick="signUpButton_Click" />
+                <asp:Label ID="errorMessageLabel" runat="server" Text="Label" ForeColor="Red"></asp:Label>
             </div>
         </div>
 
